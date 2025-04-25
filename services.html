@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Morris</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link type="https://home.html" rel="home" href="home.html">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Morris</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">contact</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <section class="Home">
+        <div class="home-content">
+            <h1>Our Services</h1>
+            <h4>Which services are you interested in?</h4>
+            <p>
+                Morris enterprise is here to offer you better services 
+                in information technologies.
+            </p>
+            <form action="#" class="services">
+                <!-- <input type="checkbox" name=""> Website Designing <br>
+                <input type="checkbox" name=""> System Development <br>
+                <input type="checkbox" name=""> Networking <br> -->
+
+                <input type="checkbox" name="service" value="50000" onchange="calc_pricing()"> Website Designing (MWK50,000) <br />
+                <input type="checkbox" name="service" value="250000" onchange="calc_pricing()"> System Development (MWK250,000) <br />
+                <input type="checkbox" name="service" value="50000" onchange="calc_pricing()"> Purchase Domain(.com) (MWK50,000) <br />
+                <input type="checkbox" name="service" value="100000" onchange="calc_pricing()"> Hosting per Year (100,000) <br />
+                <p id="total">Total: MWK 0.00</p>
+
+                <br />
+                <div class="btn-box">
+                    <a href="#" onclick="show_enquires()">Enquire</a>
+                    <a href="#" onclick="show_terms()">Terms</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="scripts/forms.js"></script>
+<script src="scripts/pricing.js"></script>
+</html>
